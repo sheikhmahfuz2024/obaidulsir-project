@@ -1,0 +1,519 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 2px solid #cd6727;
+}
+
+/* Logo Section */
+.logo a {
+    display: block;
+}
+
+.logo-img {
+    height: 60px; 
+    width: 80px;
+}
+
+/* Navigation Bar Styling */
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 30px;
+}
+
+.navbar ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #cd6727;
+}
+
+/* Header Right Section (Search, Cart, and CTA) */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Search Bar Styling */
+.search-bar input {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #cd6727;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+/* Cart Icon Styling */
+.cart-icon {
+    margin-right: 20px;
+}
+
+.cart-link {
+    color: #333;
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cart-icon i {
+    font-size: 20px; 
+    transition: color 0.3s;
+}
+
+.cart-link:hover i {
+    color: #cd6727; 
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background-color: #cd6727;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* CTA Button Styling */
+.cta-button .cta-link {
+    background-color: #cd6727;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button .cta-link:hover {
+    background-color: #a65721;
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px; 
+    background-color: #f8f8f8; 
+
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #cd6727; /* Primary color for text */
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #333; /* Subtle text color */
+}
+
+/* CTA Buttons Styling */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-primary, .cta-secondary {
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-primary {
+    background-color: #cd6727;
+    color: white;
+}
+
+.cta-primary:hover {
+    background-color: #a65721;
+}
+
+.cta-secondary {
+    background-color: white;
+    color: #cd6727;
+    border: 2px solid #cd6727;
+}
+
+.cta-secondary:hover {
+    background-color: #cd6727;
+    color: white;
+}
+
+
+/* Featured Categories Section Styles */
+.featured-categories {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.featured-categories h2 {
+    font-size: 36px;
+    color: #cd6727; 
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-item {
+    background-color: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.category-item h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.cta-link {
+    text-decoration: none;
+    background-color: #cd6727;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-link:hover {
+    background-color: #a65721; /* Darker shade on hover */
+}
+
+/* Hover Effect for Category Items */
+.category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Showcase Section Styles */
+.product-showcase {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.product-showcase h2 {
+    font-size: 36px;
+    color: #cd6727; 
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-item {
+    background-color: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.product-item .price {
+    font-size: 20px;
+    color: #cd6727; /* Price color */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.cta-link {
+    text-decoration: none;
+    background-color: #cd6727;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-link:hover {
+    background-color: #a65721; /* Darker shade on hover */
+}
+
+/* Hover Effect for Product Items */
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* How It Works Section Styles */
+.how-it-works {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 36px;
+    color: #cd6727; /* Primary color for heading */
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.step-item {
+    background-color: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-icon {
+    font-size: 40px;
+    color: #cd6727; /* Icon color */
+    margin-bottom: 15px;
+}
+
+.step-item h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.step-item p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.step-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Call-to-Action (CTA) Section Styles */
+.cta-section {
+    background-color: #bf6026; /* CTA background color */
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.cta-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    text-decoration: none;
+    background-color: white;
+    color: #cd6727;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #a65721; /* Darker shade on hover */
+    color: white;
+}
+
+/* Footer Section Styles */
+.footer {
+    background-color: #2c2c2c; /* Matte black background */
+    color: white;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.footer-links, .footer-contact {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-links h3, .footer-contact h3 {
+    font-size: 20px;
+    color: #cd6727; /* Primary color for heading */
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #cd6727; /* Hover color */
+}
+
+.footer-social {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-social h3 {
+    font-size: 20px;
+    color: #cd6727; /* Primary color for heading */
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #cd6727; /* Hover color */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    color: #bbb;
+}
+
+/* Footer Section Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    .footer-links, .footer-contact {
+        pad
